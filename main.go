@@ -28,11 +28,13 @@ func main() {
 		// Holds the string that was scanned
 		text := scanner.Text()
 
-		//convert string to array
-		sortArray := highlighter(text)
+		if text != "" {
+			//convert string to array
+			sortArray := highlighter(text)
 
-		for i, item := range sortArray {
-			fmt.Println(i+1, " ", item.Key, "-", item.Value)
+			for i, item := range sortArray {
+				fmt.Println(i+1, " ", item.Key, "-", item.Value)
+			}
 		}
 
 		if len(text) != 0 {
