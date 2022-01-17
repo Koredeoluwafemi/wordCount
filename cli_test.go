@@ -21,5 +21,4 @@ func TestTextHighlighter(t *testing.T) {
 	} else {
 		t.Errorf("test failed")
 	}
-
 }
